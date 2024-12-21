@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f3f3f3;
+  color: #f6f3f3;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  .profile-page {
+    flex-direction: column;
+  }
+
+  .side-nav {
+    width: 100%;
+    height: auto;
+  }
+
+  .content {
+    width: 100%;
+  }
+}
+
+/* Navbar */
+.navbar {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+  font-size: 1rem;
+  padding: 10px 15px;
+}
+
+.navbar-nav .nav-link.active {
+  border-bottom: 3px solid #007bff;
+}
+
+/* Buttons */
+.btn {
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+}
