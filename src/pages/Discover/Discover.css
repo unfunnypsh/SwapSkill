@@ -1,0 +1,123 @@
+:root {
+  --cyan: #3bb4a1;
+  --light-grey: #6d6e70;
+  --grey: #2d2d2d;
+  --yellow: #fbf1a4;
+  --dark-cyan: #013e38;
+  --red: #f56664;
+  --basefont: "Oswald", sans-serif;
+  --secfont: "Montserrat", sans-serif;
+}
+
+.discover-page {
+  background-color: var(--grey);
+  min-height: 100vh;
+  color: white;
+}
+
+.content-container {
+  margin-left: 20vw; /* Adjusted for fixed navbar */
+  display: flex;
+  flex-direction: column;
+  width: 80vw; /* To ensure the content isn't too wide */
+}
+
+.nav-bar {
+  background-color: #272a2a;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20vw; /* Adjust to make navbar smaller */
+  height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center the navbar content vertically */
+  align-items: center;
+}
+
+.nav-link {
+  font-family: var(--secfont);
+  text-decoration: none;
+  padding: 10px;
+  margin: 10px 0; /* Space between links */
+  color: white !important;
+  text-align: center; /* Center text */
+}
+
+.nav-link:hover {
+  color: #6d706f !important;
+}
+
+#foryou {
+  color: #f56664 !important;
+  font-size: 20px;
+}
+
+#popular1 {
+  color: #3bb4a1 !important;
+  font-size: 20px;
+}
+
+.heading-container {
+  flex: 1; /* Allow content area to grow */
+  margin-left: 30px; /* Ensure space from the navbar */
+}
+
+h2, h1 {
+  font-family: var(--secfont);
+  margin-top: 5rem;
+  text-align: center;
+  color: var(--yellow);
+}
+
+.profile-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.profile-card {
+  width: calc(33.33% - 20px);
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+}
+
+#for-you, #popular, #web-development, #machine-learning, #others {
+  margin-top: 40px;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .nav-bar {
+    width: 100vw; /* Full width on smaller screens */
+    height: auto;
+    position: static;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content-container {
+    margin-left: 0; /* No margin when navbar is horizontal */
+  }
+
+  .profile-cards {
+    justify-content: center;
+  }
+
+  .profile-card {
+    width: 100%; /* One card per row */
+  }
+}

@@ -17,6 +17,9 @@ module.exports = {
         gray: {
           300: "#e2e8f0",
         },
+        primary: "#1E293B",
+        secondary: "#334155",
+        accent: "#3B82F6",
       },
       fontFamily: {
         josefin: ["Josefin Sans", "sans-serif"],

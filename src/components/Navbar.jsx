@@ -25,13 +25,18 @@ const Navbar = () => {
               </NavLink>
             </li>
             <li className="nav__item">
-              <NavLink to="/about-us" className="nav__link">
+              <NavLink to="/about_us" className="nav__link">
                 About Us
               </NavLink>
             </li>
             <li className="nav__item">
-              <NavLink to="/why-skill-swap" className="nav__link">
+              <NavLink to="/#why-skill-swap" className="nav__link">
                 Why SwapSkill
+              </NavLink>
+            </li>
+            <li className="nav__item">
+              <NavLink to="/discover" className="nav__link">
+                Discover
               </NavLink>
             </li>
             <li className="nav__item">

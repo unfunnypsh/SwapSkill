@@ -1,4 +1,3 @@
-/* index.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,15 +5,13 @@
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
 /* Profile Page Layout */
@@ -34,6 +31,9 @@ code {
   padding: 20px;
   position: sticky;
   top: 70px;
+  display: flex;
+  flex-direction: column; /* Ensures the nav links are stacked vertically */
+  align-items: flex-start;
 }
 
 .side-nav .nav-link {
@@ -109,6 +109,9 @@ ul li {
     width: 100%;
     border-right: none;
     border-bottom: 1px solid #e0e0e0;
+    flex-direction: row; /* Align nav links horizontally on smaller screens */
+    justify-content: space-between;
+    padding: 10px;
   }
 
   .content {
@@ -117,5 +120,9 @@ ul li {
 
   .profile-section {
     padding: 10px 15px;
+  }
+
+  .side-nav .nav-link {
+    font-size: 0.9rem; /* Adjust text size for mobile */
   }
 }
